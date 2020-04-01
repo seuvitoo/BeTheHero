@@ -5,6 +5,7 @@ const connection = require('../../../src/database/connection')
 describe('ONG', () => {
 
   beforeEach(async () => {
+    await connection.migrate.rollback();
     await connection.migrate.latest();
   })
 
@@ -17,8 +18,8 @@ describe('ONG', () => {
   it('should be able to create a new ONG', async () => {
     const response = await request(app)
       .post('/ongs')
-    // para enviar um header
-    //   .set('Authorization', 'coloque o ID')
+      // para enviar um header
+      //   .set('Authorization', 'coloque o ID')
       .send({
         name: "KUL",
         email: "contato@KUL.com.br",
