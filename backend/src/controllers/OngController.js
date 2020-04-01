@@ -1,4 +1,4 @@
-import geraId from '../utils/generateUniqueId';
+const geraId = require('../utils/generateUniqueId');
 
 const crypto = require('crypto')
 const connection = require('../database/connection');
