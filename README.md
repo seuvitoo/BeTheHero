@@ -42,8 +42,8 @@ $ npm start
 ```
 # Instalando o Projeto Frontend
 ```
-# Abra outro terminal, e entra na pasta frontend:
-$ cd be-the-hero/frontend/
+# Abra outro terminal, e entre na pasta frontend:
+$ cd BeTheHero/frontend/
 
 # Instala as dependências:
 $ npm install
